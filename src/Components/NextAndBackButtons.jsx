@@ -4,6 +4,7 @@ import "./NextAndBackButtons.css"
 
 function NextAndBackButtons({pageNo,setPageNo,actionObj}){
     const {dispatch} = useContext(ResumeDataContext)
+    console.log("Log added")
     return(
         <div className="back-next-button-container">
             <button className="back-next-button" disabled={pageNo===1} onClick={e=>setPageNo(pageNo-1)}>Back</button>
