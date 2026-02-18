@@ -7,6 +7,8 @@ function RequireAuth({children}){
     const {isLoggedIn}=useContext(LoginContext)
     const location=useLocation()
 
+    console.log("Log added on require auth")
+
     if(isLoggedIn){
         return children
     }
